@@ -126,3 +126,7 @@ Android.bp
 
 # build
 out/
+
+# repository
+KernelSU/
+AnyKernel3/

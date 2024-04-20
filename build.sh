@@ -12,7 +12,7 @@
 # +---------------------------------+
 
 # kernel
-DEFCONFIG="polaris-stock_defconfig"
+DEFCONFIG="polaris-kernelsu_defconfig"
 O="out"
 ARCH="arm64"
 
@@ -29,6 +29,10 @@ BLUE="\033[0;34m"
 YELLOW="\033[0;33m"
 RED="\033[0;31m"
 RESET="\033[0m"
+
+# KernelSU
+echo -e "${YELLOW}-> fetch KernelSU ...${RESET}"
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
 
 # clean environment
 echo -e "${YELLOW}-> make mrproper ...${RESET}"
