@@ -11,6 +11,7 @@
 # | AnyKernel3 pakage script |
 # +--------------------------+
 
+VERSION_CODE="v1.0"
 O="out"
 FILES=("Image.gz-dtb")
 
@@ -33,4 +34,4 @@ done
 
 # zip files
 cd AnyKernel3/
-zip -r9 "Kernel-polaris-lineageOS-$(date +%Y-%m-%d-%H_%M).zip" * -x .git README.md LICENCE *.zip
+zip -r9 "Kernel-polaris-lineageOS-${VERSION_CODE}-$(date +%Y-%m-%d-%H_%M).zip" * -x .git README.md LICENCE *.zip
